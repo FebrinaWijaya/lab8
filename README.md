@@ -8,7 +8,7 @@
 <br>
 <br>3. compilation: make
 <br>   execution: ./tetris
-#lab8.script
+# lab8.script
 <br>Script started on 2017年06月14日 (週三) 00時33分33秒
 <br>[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/lab8 $[00m ./tetris[4Pmakescript <br>lab8.scriptmake[K./tetris[K./tetris[4Pmake
 <br>g++ -c genMino.cpp
