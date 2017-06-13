@@ -11,11 +11,11 @@ int main()
 	srandom(time(NULL));
 	for(int i=0;i<5;++i)
 	{
-		for(int i=0;i<30000000;++i)
+		for(int i=0;i<10000000;++i)
 		{
 			mino_ptr = genMino();
 		}
-		cout<<"generated 30000000 minos"<<endl;
+		cout<<"generated 10000000 minos"<<endl;
 	}
 	
 	return 0;

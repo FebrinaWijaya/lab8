@@ -1,11 +1,10 @@
-Script started on 2017年06月13日 (週二) 23時17分04秒
-^[[A[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/lab8 $[00m vi genMino.cppmake[Kvi genMino.cpp[6P./tetrisvi genMino.cpp[6P./tetris[4Pmake
+Script started on 2017年06月14日 (週三) 00時33分33秒
+[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/lab8 $[00m ./tetris[4Pmakescript lab8.scriptmake[K./tetris[K./tetris[4Pmake
 g++ -c genMino.cpp
 g++ -o tetris tetris.o genMino.o Mino.o MinoI.o MinoS.o MinoJ.o MinoL.o MinoO.o
-[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/lab8 $[00m makevi genMino.cppmake[Kvi genMino.cpp[6P./tetris
-generated 30000000 minos
-generated 30000000 minos
-Killed
-[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/lab8 $[00m exit
-
-Script done on 2017年06月13日 (週二) 23時25分56秒
+[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/lab8 $[00m make./tetris
+generated 10000000 minos
+generated 10000000 minos
+Exception : std::bad_alloc
+[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/lab8 $[00m 
+Script done on 2017年06月14日 (週三) 00時33分50秒

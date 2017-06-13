@@ -13,6 +13,15 @@ Mino * genMino()
 	Mino * ptr;
 	mino_type = random() % NUM_MINO;
 	try{
+	/*for(int i=0;i<30000000;i++)
+	{
+		if(mino_type==MINO_S) ptr=new MinoS;
+		else if(mino_type==MINO_I) ptr=new MinoI;
+		else if(mino_type==MINO_L) ptr=new MinoL;
+		else if(mino_type==MINO_J) ptr=new MinoJ;
+		else if(mino_type==MINO_O) ptr=new MinoO;
+		if(ptr==NULL) throw bad_alloc();
+	}*/
 	switch(mino_type) {
 		case MINO_S: 
 			ptr = new MinoS;
@@ -30,13 +39,14 @@ Mino * genMino()
 			ptr = new MinoO;
 			break;
 		}
+
 		return ptr;
 	}
-	catch(...)
-	//catch(bad_alloc &failed_new)
+	//catch(...)
+	catch(std::bad_alloc &failed_new)
 	{
-		//cerr<<"Exception :"<<failed_new.what()<<endl;
-		cerr<<"Exception caught"<<endl;
+		cerr<<"Exception : "<<failed_new.what()<<endl;
+		//cerr<<"Exception caught"<<endl;
 		exit(1);
 	}
 }
